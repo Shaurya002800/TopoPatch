@@ -1,0 +1,1904 @@
+{
+  "status": {
+    "epoch": 2,
+    "documents": 40,
+    "active_b": 0,
+    "charged_b_document_encodings": 14,
+    "b_query_encodings": 4,
+    "logical_index_writes": 1,
+    "models": {
+      "A": "lexical-sha256-128-v1",
+      "B": "lexical-sha256-256-synonyms-v1"
+    },
+    "dimensions": {
+      "A": 128,
+      "B": 256
+    },
+    "fallback_queries": [],
+    "backend": "exact flat search; ANN topology work not measured",
+    "fusion": "rrf",
+    "evidence_policy": "heuristic",
+    "strict_evidence": false,
+    "documents_detail": [
+      {
+        "id": "archive-00",
+        "text": "archive record 0 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-01",
+        "text": "archive record 1 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-02",
+        "text": "archive record 2 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-03",
+        "text": "archive record 3 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-04",
+        "text": "archive record 4 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-05",
+        "text": "archive record 5 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-06",
+        "text": "archive record 6 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-07",
+        "text": "archive record 7 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-08",
+        "text": "archive record 8 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-09",
+        "text": "archive record 9 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-10",
+        "text": "archive record 10 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-11",
+        "text": "archive record 11 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-12",
+        "text": "archive record 12 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-13",
+        "text": "archive record 13 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-14",
+        "text": "archive record 14 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-15",
+        "text": "archive record 15 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-16",
+        "text": "archive record 16 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-17",
+        "text": "archive record 17 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-18",
+        "text": "archive record 18 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-19",
+        "text": "archive record 19 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-20",
+        "text": "archive record 20 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-21",
+        "text": "archive record 21 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-22",
+        "text": "archive record 22 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-23",
+        "text": "archive record 23 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-24",
+        "text": "archive record 24 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-25",
+        "text": "archive record 25 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-26",
+        "text": "archive record 26 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-27",
+        "text": "archive record 27 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-28",
+        "text": "archive record 28 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-29",
+        "text": "archive record 29 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "car-guide",
+        "text": "car maintenance fix engine oil brakes",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "car-shopping",
+        "text": "automobile purchase dealer price warranty",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "cat-care",
+        "text": "cat feeding grooming health veterinary",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "cat-toys",
+        "text": "feline toys play shop purchase",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "doctor-care",
+        "text": "doctor care diagnosis treatment appointment",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "dog-care",
+        "text": "dog feeding exercise training health",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "medical-jobs",
+        "text": "physician recruitment career hospital salary",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "password-blog",
+        "text": "credentials tips account login convenience blog",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "password-policy",
+        "text": "password safe account access authentication policy",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "pet-shop",
+        "text": "canine purchase shop accessories toys",
+        "active": "A",
+        "version": 1
+      }
+    ]
+  },
+  "fixture": {
+    "documents": [
+      {
+        "id": "car-guide",
+        "text": "car maintenance fix engine oil brakes"
+      },
+      {
+        "id": "car-shopping",
+        "text": "automobile purchase dealer price warranty"
+      },
+      {
+        "id": "doctor-care",
+        "text": "doctor care diagnosis treatment appointment"
+      },
+      {
+        "id": "medical-jobs",
+        "text": "physician recruitment career hospital salary"
+      },
+      {
+        "id": "dog-care",
+        "text": "dog feeding exercise training health"
+      },
+      {
+        "id": "pet-shop",
+        "text": "canine purchase shop accessories toys"
+      },
+      {
+        "id": "password-policy",
+        "text": "password safe account access authentication policy"
+      },
+      {
+        "id": "password-blog",
+        "text": "credentials tips account login convenience blog"
+      },
+      {
+        "id": "cat-care",
+        "text": "cat feeding grooming health veterinary"
+      },
+      {
+        "id": "cat-toys",
+        "text": "feline toys play shop purchase"
+      },
+      {
+        "id": "archive-00",
+        "text": "archive record 0 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-01",
+        "text": "archive record 1 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-02",
+        "text": "archive record 2 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-03",
+        "text": "archive record 3 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-04",
+        "text": "archive record 4 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-05",
+        "text": "archive record 5 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-06",
+        "text": "archive record 6 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-07",
+        "text": "archive record 7 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-08",
+        "text": "archive record 8 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-09",
+        "text": "archive record 9 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-10",
+        "text": "archive record 10 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-11",
+        "text": "archive record 11 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-12",
+        "text": "archive record 12 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-13",
+        "text": "archive record 13 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-14",
+        "text": "archive record 14 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-15",
+        "text": "archive record 15 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-16",
+        "text": "archive record 16 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-17",
+        "text": "archive record 17 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-18",
+        "text": "archive record 18 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-19",
+        "text": "archive record 19 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-20",
+        "text": "archive record 20 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-21",
+        "text": "archive record 21 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-22",
+        "text": "archive record 22 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-23",
+        "text": "archive record 23 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-24",
+        "text": "archive record 24 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-25",
+        "text": "archive record 25 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-26",
+        "text": "archive record 26 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-27",
+        "text": "archive record 27 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-28",
+        "text": "archive record 28 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-29",
+        "text": "archive record 29 astronomy geology history mathematics research"
+      }
+    ],
+    "protected_queries": [
+      {
+        "id": "q-car",
+        "text": "car fix engine",
+        "required": "car-guide",
+        "max_rank": 2
+      },
+      {
+        "id": "q-doctor",
+        "text": "doctor diagnosis treatment",
+        "required": "doctor-care",
+        "max_rank": 2
+      },
+      {
+        "id": "q-dog",
+        "text": "dog feeding training",
+        "required": "dog-care",
+        "max_rank": 2
+      },
+      {
+        "id": "q-policy",
+        "text": "password account policy",
+        "required": "password-policy",
+        "max_rank": 1
+      }
+    ],
+    "progress_queries": [
+      "automobile repair engine",
+      "physician diagnosis treatment",
+      "canine feeding training",
+      "feline grooming health"
+    ]
+  },
+  "fixture_hash": "f92755697b75d38d78a03cff8abaaf9224d3c9ca1b2bec4d5ff4cdf1072f0fa9",
+  "python": "3.14.3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "events": [
+    {
+      "seq": 1,
+      "kind": "initialized",
+      "payload": {
+        "corpus_hash": "97832db7063a1fdc8858c766d65bde3ba40fd92a4f90d8ca2bd7219ecd10b2fa"
+      },
+      "at": 1792064345.970829
+    },
+    {
+      "seq": 2,
+      "kind": "envelope",
+      "payload": {
+        "ids": [
+          "archive-00",
+          "archive-01",
+          "archive-08",
+          "archive-10",
+          "archive-14",
+          "archive-16",
+          "archive-19",
+          "archive-27",
+          "car-guide",
+          "cat-care",
+          "doctor-care",
+          "dog-care",
+          "password-blog",
+          "password-policy"
+        ],
+        "target_coverage": 0.35,
+        "status": "HEURISTIC_UNBOUNDED",
+        "full_b_guarantee": false,
+        "explanation": "Legacy candidates do not bound unseen target-model competitors."
+      },
+      "at": 1792064369.8327
+    },
+    {
+      "seq": 3,
+      "kind": "preview",
+      "payload": {
+        "id": "46b2de27387ded6783791f8eb30cd22cf0b27d683a270aeb9d19ce7febd57d53",
+        "ids": [
+          "archive-00"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.840509
+    },
+    {
+      "seq": 4,
+      "kind": "preview",
+      "payload": {
+        "id": "ad10d04cce35b5f521b8b1ffbf140ac159d3199814ff36de2b5de3cbca531c9f",
+        "ids": [
+          "archive-01"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.844672
+    },
+    {
+      "seq": 5,
+      "kind": "preview",
+      "payload": {
+        "id": "67bb7355cfe65730686adac91ea03b3daf32625fbd9c224471e539a3f9d2d8b5",
+        "ids": [
+          "archive-08"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.848685
+    },
+    {
+      "seq": 6,
+      "kind": "preview",
+      "payload": {
+        "id": "56072cbfcc018aac64c04ddfef3dd346f9f538685e2a0fa12f0bb6948a4ad947",
+        "ids": [
+          "archive-10"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.852704
+    },
+    {
+      "seq": 7,
+      "kind": "preview",
+      "payload": {
+        "id": "08c1bda2fc05ce4fd3647d71c9273678c500eb0dc26f6d487aab2719ce8ad9ba",
+        "ids": [
+          "archive-14"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.856473
+    },
+    {
+      "seq": 8,
+      "kind": "preview",
+      "payload": {
+        "id": "e6662685d807682262f63b0978a428a40a4681c47c87be8629de48a887679349",
+        "ids": [
+          "archive-16"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.860014
+    },
+    {
+      "seq": 9,
+      "kind": "preview",
+      "payload": {
+        "id": "657f75d93d27fabe6de4e1e57e6d45b584dd2000e672883418d45dff8911ef83",
+        "ids": [
+          "archive-19"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.863533
+    },
+    {
+      "seq": 10,
+      "kind": "preview",
+      "payload": {
+        "id": "182b3deafe1231ca87ad8ecb17c6a97caa8154256a86ff48a503dfc3ead2b3c4",
+        "ids": [
+          "archive-27"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.866949
+    },
+    {
+      "seq": 11,
+      "kind": "preview",
+      "payload": {
+        "id": "1eed1f6a4a6fadabc0d2f34ff530cef87d3bb0b24fc507f3fdefedb227a280ed",
+        "ids": [
+          "car-guide"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 1,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.870364
+    },
+    {
+      "seq": 12,
+      "kind": "preview",
+      "payload": {
+        "id": "d10bca707a153a98617ec9d809452617624c4a6dfafc2f24eb4ec8830fe8eb8f",
+        "ids": [
+          "cat-care"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.8736598
+    },
+    {
+      "seq": 13,
+      "kind": "preview",
+      "payload": {
+        "id": "57803d90d5e026aba14989c208d64dbb4bba24da9caaf0c4d7d091c1e06d3d56",
+        "ids": [
+          "doctor-care"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 1,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.87725
+    },
+    {
+      "seq": 14,
+      "kind": "preview",
+      "payload": {
+        "id": "a1846a486fc72d948d470e91eb1a2999a7360df9c610e875e53d9e22832d4f6b",
+        "ids": [
+          "dog-care"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 1,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.880695
+    },
+    {
+      "seq": 15,
+      "kind": "preview",
+      "payload": {
+        "id": "565adbf9dbabc917b39abb9d6783722d49738b2030feceaddce3d9a6019efbab",
+        "ids": [
+          "password-blog"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.883949
+    },
+    {
+      "seq": 16,
+      "kind": "preview",
+      "payload": {
+        "id": "0af3185fda58d65830ac7aa53d13c7d7d80d4eea9b0ea3f3e97d2ea0f0ac5c5e",
+        "ids": [
+          "password-policy"
+        ],
+        "barrier": {
+          "pass": true,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 1,
+              "max_rank": 1,
+              "pass": true
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064369.887041
+    },
+    {
+      "seq": 17,
+      "kind": "proposal",
+      "payload": {
+        "envelope": {
+          "ids": [
+            "archive-00",
+            "archive-01",
+            "archive-08",
+            "archive-10",
+            "archive-14",
+            "archive-16",
+            "archive-19",
+            "archive-27",
+            "car-guide",
+            "cat-care",
+            "doctor-care",
+            "dog-care",
+            "password-blog",
+            "password-policy"
+          ],
+          "target_coverage": 0.35,
+          "status": "HEURISTIC_UNBOUNDED",
+          "full_b_guarantee": false,
+          "explanation": "Legacy candidates do not bound unseen target-model competitors."
+        },
+        "witnesses": [
+          {
+            "preview_id": "46b2de27387ded6783791f8eb30cd22cf0b27d683a270aeb9d19ce7febd57d53",
+            "ids": [
+              "archive-00"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "ad10d04cce35b5f521b8b1ffbf140ac159d3199814ff36de2b5de3cbca531c9f",
+            "ids": [
+              "archive-01"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "67bb7355cfe65730686adac91ea03b3daf32625fbd9c224471e539a3f9d2d8b5",
+            "ids": [
+              "archive-08"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "56072cbfcc018aac64c04ddfef3dd346f9f538685e2a0fa12f0bb6948a4ad947",
+            "ids": [
+              "archive-10"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "08c1bda2fc05ce4fd3647d71c9273678c500eb0dc26f6d487aab2719ce8ad9ba",
+            "ids": [
+              "archive-14"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "e6662685d807682262f63b0978a428a40a4681c47c87be8629de48a887679349",
+            "ids": [
+              "archive-16"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "657f75d93d27fabe6de4e1e57e6d45b584dd2000e672883418d45dff8911ef83",
+            "ids": [
+              "archive-19"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "182b3deafe1231ca87ad8ecb17c6a97caa8154256a86ff48a503dfc3ead2b3c4",
+            "ids": [
+              "archive-27"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "1eed1f6a4a6fadabc0d2f34ff530cef87d3bb0b24fc507f3fdefedb227a280ed",
+            "ids": [
+              "car-guide"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": 0,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "d10bca707a153a98617ec9d809452617624c4a6dfafc2f24eb4ec8830fe8eb8f",
+            "ids": [
+              "cat-care"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "57803d90d5e026aba14989c208d64dbb4bba24da9caaf0c4d7d091c1e06d3d56",
+            "ids": [
+              "doctor-care"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": 0,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "a1846a486fc72d948d470e91eb1a2999a7360df9c610e875e53d9e22832d4f6b",
+            "ids": [
+              "dog-care"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": 0,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "565adbf9dbabc917b39abb9d6783722d49738b2030feceaddce3d9a6019efbab",
+            "ids": [
+              "password-blog"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": -1,
+                "pass": false
+              }
+            ],
+            "safe": false,
+            "cost_objects": 1
+          },
+          {
+            "preview_id": "0af3185fda58d65830ac7aa53d13c7d7d80d4eea9b0ea3f3e97d2ea0f0ac5c5e",
+            "ids": [
+              "password-policy"
+            ],
+            "effects": [
+              {
+                "query_id": "q-car",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-doctor",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-dog",
+                "delta_rank": -1,
+                "pass": true
+              },
+              {
+                "query_id": "q-policy",
+                "delta_rank": 0,
+                "pass": true
+              }
+            ],
+            "safe": true,
+            "cost_objects": 1
+          }
+        ],
+        "recommended": {
+          "preview_id": "0af3185fda58d65830ac7aa53d13c7d7d80d4eea9b0ea3f3e97d2ea0f0ac5c5e",
+          "ids": [
+            "password-policy"
+          ],
+          "effects": [
+            {
+              "query_id": "q-car",
+              "delta_rank": -1,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "delta_rank": -1,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "delta_rank": -1,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "delta_rank": 0,
+              "pass": true
+            }
+          ],
+          "safe": true,
+          "cost_objects": 1
+        },
+        "search_scope": {
+          "candidate_cap": 24,
+          "max_bundle": 2
+        },
+        "optimality": "Minimum object count among enumerated actions only"
+      },
+      "at": 1792064369.88731
+    },
+    {
+      "seq": 18,
+      "kind": "preview",
+      "payload": {
+        "id": "1eed1f6a4a6fadabc0d2f34ff530cef87d3bb0b24fc507f3fdefedb227a280ed",
+        "ids": [
+          "car-guide"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 1,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064375.5448582
+    },
+    {
+      "seq": 19,
+      "kind": "preview",
+      "payload": {
+        "id": "0af3185fda58d65830ac7aa53d13c7d7d80d4eea9b0ea3f3e97d2ea0f0ac5c5e",
+        "ids": [
+          "password-policy"
+        ],
+        "barrier": {
+          "pass": true,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 1,
+              "max_rank": 1,
+              "pass": true
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064381.696408
+    },
+    {
+      "seq": 20,
+      "kind": "commit",
+      "payload": {
+        "epoch": 1,
+        "preview_id": "0af3185fda58d65830ac7aa53d13c7d7d80d4eea9b0ea3f3e97d2ea0f0ac5c5e",
+        "ids": [
+          "password-policy"
+        ],
+        "before": {
+          "archive-00": "A",
+          "archive-01": "A",
+          "archive-02": "A",
+          "archive-03": "A",
+          "archive-04": "A",
+          "archive-05": "A",
+          "archive-06": "A",
+          "archive-07": "A",
+          "archive-08": "A",
+          "archive-09": "A",
+          "archive-10": "A",
+          "archive-11": "A",
+          "archive-12": "A",
+          "archive-13": "A",
+          "archive-14": "A",
+          "archive-15": "A",
+          "archive-16": "A",
+          "archive-17": "A",
+          "archive-18": "A",
+          "archive-19": "A",
+          "archive-20": "A",
+          "archive-21": "A",
+          "archive-22": "A",
+          "archive-23": "A",
+          "archive-24": "A",
+          "archive-25": "A",
+          "archive-26": "A",
+          "archive-27": "A",
+          "archive-28": "A",
+          "archive-29": "A",
+          "car-guide": "A",
+          "car-shopping": "A",
+          "cat-care": "A",
+          "cat-toys": "A",
+          "doctor-care": "A",
+          "dog-care": "A",
+          "medical-jobs": "A",
+          "password-blog": "A",
+          "password-policy": "A",
+          "pet-shop": "A"
+        },
+        "after_snapshot": "caa94a24c85439403feeec486f01ad85df34f0029a99b6c6a803c05bb1dadc4c",
+        "barrier": {
+          "pass": true,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 1,
+              "max_rank": 1,
+              "pass": true
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064386.746596
+    },
+    {
+      "seq": 21,
+      "kind": "rollback",
+      "payload": {
+        "commit_epoch": 1,
+        "epoch": 2
+      },
+      "at": 1792064426.675165
+    },
+    {
+      "seq": 22,
+      "kind": "preview",
+      "payload": {
+        "id": "ec4d7b44c93251fedd027e2526d423b9c47bbe76281b2e32cd8a41f7d0a75e20",
+        "ids": [
+          "car-guide"
+        ],
+        "barrier": {
+          "pass": false,
+          "constraints": [
+            {
+              "query_id": "q-car",
+              "required": "car-guide",
+              "rank": 1,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-doctor",
+              "required": "doctor-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-dog",
+              "required": "dog-care",
+              "rank": 2,
+              "max_rank": 2,
+              "pass": true
+            },
+            {
+              "query_id": "q-policy",
+              "required": "password-policy",
+              "rank": 2,
+              "max_rank": 1,
+              "pass": false
+            }
+          ],
+          "progress_ndcg_at_10": null,
+          "progress_pass": true,
+          "mode": "exact_declared_queries_mixed_state",
+          "scope": "No guarantee for unseen queries or full-B top-k equivalence"
+        }
+      },
+      "at": 1792064427.283983
+    }
+  ]
+}

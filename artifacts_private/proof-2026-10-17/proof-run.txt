@@ -1,0 +1,12 @@
+{
+  "output": "/Users/shaurya/Downloads/TotoPatch/artifacts_private/prototype-proof-trace.json",
+  "proof_checks": {
+    "unsafe_rejected": true,
+    "prediction_matches_commit": true,
+    "restart_persists": true,
+    "rollback_restores": true,
+    "strict_heuristic_rejected": true,
+    "strict_exhaustive_commit": true,
+    "injected_write_rolled_back": true
+  }
+}

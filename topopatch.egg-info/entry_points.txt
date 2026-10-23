@@ -1,0 +1,2 @@
+[console_scripts]
+topopatch = topopatch.__main__:main

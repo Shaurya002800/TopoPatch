@@ -1,0 +1,474 @@
+{
+  "status": {
+    "epoch": 0,
+    "documents": 40,
+    "active_b": 0,
+    "charged_b_document_encodings": 0,
+    "b_query_encodings": 4,
+    "logical_index_writes": 0,
+    "models": {
+      "A": "lexical-sha256-128-v1",
+      "B": "lexical-sha256-256-synonyms-v1"
+    },
+    "dimensions": {
+      "A": 128,
+      "B": 256
+    },
+    "fallback_queries": [],
+    "backend": "exact flat search; ANN topology work not measured",
+    "fusion": "rrf",
+    "evidence_policy": "heuristic",
+    "strict_evidence": false,
+    "documents_detail": [
+      {
+        "id": "archive-00",
+        "text": "archive record 0 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-01",
+        "text": "archive record 1 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-02",
+        "text": "archive record 2 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-03",
+        "text": "archive record 3 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-04",
+        "text": "archive record 4 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-05",
+        "text": "archive record 5 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-06",
+        "text": "archive record 6 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-07",
+        "text": "archive record 7 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-08",
+        "text": "archive record 8 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-09",
+        "text": "archive record 9 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-10",
+        "text": "archive record 10 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-11",
+        "text": "archive record 11 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-12",
+        "text": "archive record 12 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-13",
+        "text": "archive record 13 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-14",
+        "text": "archive record 14 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-15",
+        "text": "archive record 15 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-16",
+        "text": "archive record 16 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-17",
+        "text": "archive record 17 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-18",
+        "text": "archive record 18 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-19",
+        "text": "archive record 19 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-20",
+        "text": "archive record 20 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-21",
+        "text": "archive record 21 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-22",
+        "text": "archive record 22 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-23",
+        "text": "archive record 23 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-24",
+        "text": "archive record 24 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-25",
+        "text": "archive record 25 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-26",
+        "text": "archive record 26 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-27",
+        "text": "archive record 27 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-28",
+        "text": "archive record 28 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "archive-29",
+        "text": "archive record 29 astronomy geology history mathematics research",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "car-guide",
+        "text": "car maintenance fix engine oil brakes",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "car-shopping",
+        "text": "automobile purchase dealer price warranty",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "cat-care",
+        "text": "cat feeding grooming health veterinary",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "cat-toys",
+        "text": "feline toys play shop purchase",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "doctor-care",
+        "text": "doctor care diagnosis treatment appointment",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "dog-care",
+        "text": "dog feeding exercise training health",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "medical-jobs",
+        "text": "physician recruitment career hospital salary",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "password-blog",
+        "text": "credentials tips account login convenience blog",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "password-policy",
+        "text": "password safe account access authentication policy",
+        "active": "A",
+        "version": 1
+      },
+      {
+        "id": "pet-shop",
+        "text": "canine purchase shop accessories toys",
+        "active": "A",
+        "version": 1
+      }
+    ]
+  },
+  "fixture": {
+    "documents": [
+      {
+        "id": "car-guide",
+        "text": "car maintenance fix engine oil brakes"
+      },
+      {
+        "id": "car-shopping",
+        "text": "automobile purchase dealer price warranty"
+      },
+      {
+        "id": "doctor-care",
+        "text": "doctor care diagnosis treatment appointment"
+      },
+      {
+        "id": "medical-jobs",
+        "text": "physician recruitment career hospital salary"
+      },
+      {
+        "id": "dog-care",
+        "text": "dog feeding exercise training health"
+      },
+      {
+        "id": "pet-shop",
+        "text": "canine purchase shop accessories toys"
+      },
+      {
+        "id": "password-policy",
+        "text": "password safe account access authentication policy"
+      },
+      {
+        "id": "password-blog",
+        "text": "credentials tips account login convenience blog"
+      },
+      {
+        "id": "cat-care",
+        "text": "cat feeding grooming health veterinary"
+      },
+      {
+        "id": "cat-toys",
+        "text": "feline toys play shop purchase"
+      },
+      {
+        "id": "archive-00",
+        "text": "archive record 0 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-01",
+        "text": "archive record 1 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-02",
+        "text": "archive record 2 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-03",
+        "text": "archive record 3 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-04",
+        "text": "archive record 4 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-05",
+        "text": "archive record 5 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-06",
+        "text": "archive record 6 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-07",
+        "text": "archive record 7 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-08",
+        "text": "archive record 8 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-09",
+        "text": "archive record 9 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-10",
+        "text": "archive record 10 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-11",
+        "text": "archive record 11 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-12",
+        "text": "archive record 12 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-13",
+        "text": "archive record 13 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-14",
+        "text": "archive record 14 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-15",
+        "text": "archive record 15 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-16",
+        "text": "archive record 16 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-17",
+        "text": "archive record 17 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-18",
+        "text": "archive record 18 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-19",
+        "text": "archive record 19 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-20",
+        "text": "archive record 20 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-21",
+        "text": "archive record 21 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-22",
+        "text": "archive record 22 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-23",
+        "text": "archive record 23 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-24",
+        "text": "archive record 24 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-25",
+        "text": "archive record 25 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-26",
+        "text": "archive record 26 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-27",
+        "text": "archive record 27 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-28",
+        "text": "archive record 28 astronomy geology history mathematics research"
+      },
+      {
+        "id": "archive-29",
+        "text": "archive record 29 astronomy geology history mathematics research"
+      }
+    ],
+    "protected_queries": [
+      {
+        "id": "q-car",
+        "text": "car fix engine",
+        "required": "car-guide",
+        "max_rank": 2
+      },
+      {
+        "id": "q-doctor",
+        "text": "doctor diagnosis treatment",
+        "required": "doctor-care",
+        "max_rank": 2
+      },
+      {
+        "id": "q-dog",
+        "text": "dog feeding training",
+        "required": "dog-care",
+        "max_rank": 2
+      },
+      {
+        "id": "q-policy",
+        "text": "password account policy",
+        "required": "password-policy",
+        "max_rank": 1
+      }
+    ],
+    "progress_queries": [
+      "automobile repair engine",
+      "physician diagnosis treatment",
+      "canine feeding training",
+      "feline grooming health"
+    ]
+  },
+  "fixture_hash": "f92755697b75d38d78a03cff8abaaf9224d3c9ca1b2bec4d5ff4cdf1072f0fa9",
+  "python": "3.14.3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "events": [
+    {
+      "seq": 1,
+      "kind": "initialized",
+      "payload": {
+        "corpus_hash": "97832db7063a1fdc8858c766d65bde3ba40fd92a4f90d8ca2bd7219ecd10b2fa"
+      },
+      "at": 1792227649.964519
+    }
+  ]
+}

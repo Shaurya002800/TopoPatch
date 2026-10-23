@@ -1,0 +1,30 @@
+{
+  "output": "artifacts_private/proof-2026-10-17/benchmark.json",
+  "baselines": {
+    "topopatch": {
+      "full_b_top5_overlap": 0.8,
+      "protected_violations": 0,
+      "active_b": 1,
+      "charged_b_documents": 14
+    },
+    "legacy": {
+      "full_b_top5_overlap": 0.95,
+      "protected_violations": 0,
+      "active_b": 0,
+      "charged_b_documents": 0
+    },
+    "full_b": {
+      "full_b_top5_overlap": 1.0,
+      "protected_violations": 0,
+      "active_b": 40,
+      "charged_b_documents": 40
+    },
+    "random_equal_migration_count": {
+      "full_b_top5_overlap": 0.8,
+      "protected_violations": 1,
+      "active_b": 1,
+      "charged_b_documents": 1
+    }
+  },
+  "evaluation_only_b_documents": 40
+}

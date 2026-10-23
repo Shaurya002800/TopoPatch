@@ -1,0 +1,269 @@
+{
+  "fixture": {
+    "documents": 40,
+    "protected_queries": 4
+  },
+  "scope": "Authored lexical fixture; exact local search and SQLite. Not a production or unseen-query guarantee.",
+  "sequence": {
+    "before_commit": {
+      "active_b": 0,
+      "charged_b_document_encodings": 14,
+      "epoch": 0,
+      "protected": [
+        {
+          "max_rank": 2,
+          "pass": true,
+          "query_id": "q-car",
+          "rank": 1,
+          "required": "car-guide"
+        },
+        {
+          "max_rank": 2,
+          "pass": true,
+          "query_id": "q-doctor",
+          "rank": 1,
+          "required": "doctor-care"
+        },
+        {
+          "max_rank": 2,
+          "pass": true,
+          "query_id": "q-dog",
+          "rank": 1,
+          "required": "dog-care"
+        },
+        {
+          "max_rank": 1,
+          "pass": true,
+          "query_id": "q-policy",
+          "rank": 1,
+          "required": "password-policy"
+        }
+      ],
+      "snapshot": "163084ae42d8f153e769f8692ff682f6535fb5b200a426ca8cbd8263024eeec6",
+      "writes": 0
+    },
+    "candidate_status": "HEURISTIC_UNBOUNDED",
+    "commit": {
+      "epoch": 1,
+      "state": {
+        "active_b": 1,
+        "charged_b_document_encodings": 14,
+        "epoch": 1,
+        "protected": [
+          {
+            "max_rank": 2,
+            "pass": true,
+            "query_id": "q-car",
+            "rank": 2,
+            "required": "car-guide"
+          },
+          {
+            "max_rank": 2,
+            "pass": true,
+            "query_id": "q-doctor",
+            "rank": 2,
+            "required": "doctor-care"
+          },
+          {
+            "max_rank": 2,
+            "pass": true,
+            "query_id": "q-dog",
+            "rank": 2,
+            "required": "dog-care"
+          },
+          {
+            "max_rank": 1,
+            "pass": true,
+            "query_id": "q-policy",
+            "rank": 1,
+            "required": "password-policy"
+          }
+        ],
+        "snapshot": "caa94a24c85439403feeec486f01ad85df34f0029a99b6c6a803c05bb1dadc4c",
+        "writes": 1
+      }
+    },
+    "initial": {
+      "active_b": 0,
+      "charged_b_document_encodings": 0,
+      "epoch": 0,
+      "protected": [
+        {
+          "max_rank": 2,
+          "pass": true,
+          "query_id": "q-car",
+          "rank": 1,
+          "required": "car-guide"
+        },
+        {
+          "max_rank": 2,
+          "pass": true,
+          "query_id": "q-doctor",
+          "rank": 1,
+          "required": "doctor-care"
+        },
+        {
+          "max_rank": 2,
+          "pass": true,
+          "query_id": "q-dog",
+          "rank": 1,
+          "required": "dog-care"
+        },
+        {
+          "max_rank": 1,
+          "pass": true,
+          "query_id": "q-policy",
+          "rank": 1,
+          "required": "password-policy"
+        }
+      ],
+      "snapshot": "163084ae42d8f153e769f8692ff682f6535fb5b200a426ca8cbd8263024eeec6",
+      "writes": 0
+    },
+    "prediction_matches_committed_top5": true,
+    "restart_persists_snapshot": true,
+    "rollback": {
+      "active_b": 0,
+      "charged_b_document_encodings": 14,
+      "epoch": 2,
+      "protected": [
+        {
+          "max_rank": 2,
+          "pass": true,
+          "query_id": "q-car",
+          "rank": 1,
+          "required": "car-guide"
+        },
+        {
+          "max_rank": 2,
+          "pass": true,
+          "query_id": "q-doctor",
+          "rank": 1,
+          "required": "doctor-care"
+        },
+        {
+          "max_rank": 2,
+          "pass": true,
+          "query_id": "q-dog",
+          "rank": 1,
+          "required": "dog-care"
+        },
+        {
+          "max_rank": 1,
+          "pass": true,
+          "query_id": "q-policy",
+          "rank": 1,
+          "required": "password-policy"
+        }
+      ],
+      "snapshot": "65a6233d395c805e0028a4b478af777229387df5230165d7b18fea14f19718ef",
+      "writes": 1
+    },
+    "safe": {
+      "barrier_pass": true,
+      "effects": [
+        {
+          "delta_rank": -1,
+          "pass": true,
+          "query_id": "q-car"
+        },
+        {
+          "delta_rank": -1,
+          "pass": true,
+          "query_id": "q-doctor"
+        },
+        {
+          "delta_rank": -1,
+          "pass": true,
+          "query_id": "q-dog"
+        },
+        {
+          "delta_rank": 0,
+          "pass": true,
+          "query_id": "q-policy"
+        }
+      ],
+      "ids": [
+        "password-policy"
+      ],
+      "preview_id": "0af3185fda58d65830ac7aa53d13c7d7d80d4eea9b0ea3f3e97d2ea0f0ac5c5e"
+    },
+    "unsafe": {
+      "barrier_pass": false,
+      "commit_error": "Unsafe preview: commit denied",
+      "effects": [
+        {
+          "delta_rank": 0,
+          "pass": true,
+          "query_id": "q-car"
+        },
+        {
+          "delta_rank": -1,
+          "pass": true,
+          "query_id": "q-doctor"
+        },
+        {
+          "delta_rank": -1,
+          "pass": true,
+          "query_id": "q-dog"
+        },
+        {
+          "delta_rank": -1,
+          "pass": false,
+          "query_id": "q-policy"
+        }
+      ],
+      "ids": [
+        "car-guide"
+      ],
+      "membership_unchanged": true
+    },
+    "witnesses_checked": 14
+  },
+  "strict_exhaustive": {
+    "active_b": 4,
+    "charged_b_documents": 40,
+    "commit_passed": true,
+    "epoch": 1,
+    "protected": [
+      {
+        "max_rank": 2,
+        "pass": true,
+        "query_id": "q-car",
+        "rank": 1,
+        "required": "car-guide"
+      },
+      {
+        "max_rank": 2,
+        "pass": true,
+        "query_id": "q-doctor",
+        "rank": 1,
+        "required": "doctor-care"
+      },
+      {
+        "max_rank": 2,
+        "pass": true,
+        "query_id": "q-dog",
+        "rank": 1,
+        "required": "dog-care"
+      },
+      {
+        "max_rank": 1,
+        "pass": true,
+        "query_id": "q-policy",
+        "rank": 1,
+        "required": "password-policy"
+      }
+    ]
+  },
+  "strict_heuristic": {
+    "active_b": 0,
+    "reason": "Candidate evidence unbounded; protected migration fails closed",
+    "rejected": true
+  },
+  "write_failure": {
+    "membership_unchanged": true,
+    "reason": "injected write failure",
+    "transaction_rolled_back": true
+  }
+}

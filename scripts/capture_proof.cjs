@@ -1,0 +1,43 @@
+// Replays the real browser workflow against three fresh, local server processes.
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE || '/Users/shaurya/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs=require('fs'),path=require('path'),assert=require('assert/strict'),{spawn}=require('child_process');
+const root=path.resolve(__dirname,'..'), out=process.env.TOPOPATCH_PROOF_DIR || path.join(root,'artifacts_private/proof-2026-10-17');
+const screenshots=path.join(out,'screenshots');fs.mkdirSync(screenshots,{recursive:true});
+const processes=[]; const report={date:new Date().toISOString(),scope:'Authored 40-document lexical fixture, exact search, loopback HTTP and SQLite',checks:[],captures:[]};
+function check(name,fn){fn();report.checks.push({name,pass:true});console.log('PASS',name)}
+async function start(mode,port,db){const child=spawn('python3',['-m','topopatch','serve','--db',db,'--port',String(port),'--evidence',mode],{cwd:root});processes.push(child);child.stderr.on('data',x=>process.stderr.write(x));await new Promise((resolve,reject)=>{child.stdout.once('data',resolve);child.once('exit',c=>reject(Error('Server exit '+c)));setTimeout(()=>reject(Error('Server startup timeout')),10000).unref()});return child;}
+(async()=>{
+let browser;
+try {
+ for(const name of ['browser','strict','exhaustive']){const p=path.join(out,name+'.sqlite');if(fs.existsSync(p))throw Error('Evidence DB exists; archive prior run before replay: '+p)}
+ let server=await start('heuristic',8875,path.join(out,'browser.sqlite'));
+ await start('strict',8876,path.join(out,'strict.sqlite'));await start('exhaustive',8877,path.join(out,'exhaustive.sqlite'));
+ browser=await chromium.launch({headless:true}); const page=await browser.newPage({viewport:{width:1440,height:1080},deviceScaleFactor:1});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const api=async(route,data,port=8875)=>{const r=await fetch(`http://127.0.0.1:${port}/api/${route}`,data===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});return {status:r.status,body:await r.json()}};
+ const state=async(port)=> (await api('state',undefined,port)).body;
+ async function idle(){await page.waitForFunction(()=>typeof busy!=='undefined'&&!busy);await page.waitForTimeout(180)}
+ async function capture(name,selector){await page.locator('#message').waitFor({state:'hidden',timeout:8000});if(selector)await page.locator(selector).first().screenshot({path:path.join(screenshots,name+'.png')});else {await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.join(screenshots,name+'.png'),fullPage:true})}report.captures.push(name+'.png')}
+ async function save(name){const data=(await api('export')).body;fs.writeFileSync(path.join(out,name+'.json'),JSON.stringify(data,null,2));return data}
+ await page.goto('http://127.0.0.1:8875');await page.locator('.card strong').first().waitFor();
+ let initial=await state();check('Fresh state: epoch 0, B membership 0',()=>{assert.equal(initial.status.epoch,0);assert.equal(initial.status.active_b,0)});await save('01-initial');await capture('01-initial');
+ await page.locator('#analyze').click();await idle();let analyzed=await state();check('Discovery charged 14 vectors without activating membership',()=>{assert.equal(analyzed.status.charged_b_document_encodings,14);assert.equal(analyzed.status.active_b,0)});await capture('02-analysis','#repairs');
+ await page.locator('.action').filter({has:page.locator('strong',{hasText:/^car-guide$/})}).click();await idle();assert.equal(await page.locator('#commit').isDisabled(),true);report.checks.push({name:'Unsafe preview visibly disables commit',pass:true});await capture('03-unsafe-preview','#repairs');
+ const unsafe=(await api('preview',{ids:['car-guide']})).body;const denied=await api('commit',{id:unsafe.id});check('Direct HTTP unsafe commit refused',()=>{assert.equal(denied.status,400);assert.match(denied.body.error,/Unsafe/)});assert.equal((await state()).status.active_b,0);report.unsafe=denied;
+ await page.locator('.action').filter({has:page.locator('strong',{hasText:/^password-policy$/})}).click();await idle();assert.equal(await page.locator('#commit').isEnabled(),true);await capture('04-safe-preview','#repairs');
+ await page.locator('#commit').click();await idle();let committed=await save('05-committed');check('Accepted commit: epoch 1, active B 1, all protected checks pass',()=>{assert.equal(committed.status.epoch,1);assert.equal(committed.status.active_b,1)});assert.equal((await state()).barrier.pass,true);await capture('05-committed');
+ await page.locator('#query').fill('password account policy');await page.locator('#searchForm button').click();await idle();assert.match(await page.locator('#results li').first().innerText(),/^password-policy/);await capture('06-live-search','#search');report.checks.push({name:'Live search returns protected password-policy first',pass:true});
+ const downloadPromise=page.waitForEvent('download');await page.getByText('Export evidence').click();const download=await downloadPromise;await download.saveAs(path.join(out,'06-browser-download.json'));check('Browser export contains committed state',()=>assert.equal(JSON.parse(fs.readFileSync(path.join(out,'06-browser-download.json'))).status.active_b,1));
+ await new Promise(resolve=>{server.once('exit',resolve);server.kill()});server=await start('heuristic',8875,path.join(out,'browser.sqlite'));await page.reload();await page.locator('.card strong').first().waitFor();let reopened=await state();check('Actual server restart preserves epoch and membership',()=>{assert.equal(reopened.status.epoch,1);assert.equal(reopened.status.active_b,1)});await capture('07-restarted');
+ await page.locator('.fallback[data-id="q-policy"]').click();await idle();const q=reopened.queries.find(q=>q.id==='q-policy');const valid=await api('search',{text:q.text,query_id:q.id});const invalid=await api('search',{text:'wrong text',query_id:q.id});check('Registered legacy fallback works and mismatched query is refused',()=>{assert.equal(valid.status,200);assert.equal(invalid.status,400)});await capture('08-fallback','.panel');
+ await page.locator('#rollback').click();await idle();let rolled=await save('09-rolled-back');check('Rollback: epoch 2, B membership 0, incurred encoding cost retained',()=>{assert.equal(rolled.status.epoch,2);assert.equal(rolled.status.active_b,0);assert.equal(rolled.status.charged_b_document_encodings,14)});await capture('09-rollback');
+ let stale=await api('commit',{id:committed.events.find(e=>e.kind==='commit').payload.preview_id});check('Old commit preview rejected after rollback',()=>{assert.equal(stale.status,400);assert.match(stale.body.error,/Stale/)});
+ const origin=await fetch('http://127.0.0.1:8875/api/propose',{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://example.invalid'},body:'{}'});assert.equal(origin.status,403);
+ const badjson=await fetch('http://127.0.0.1:8875/api/preview',{method:'POST',headers:{'Content-Type':'application/json'},body:'{'});assert.equal(badjson.status,400);
+ const missing=await api('preview',{ids:['missing']});assert.equal(missing.status,400);report.checks.push({name:'Cross-origin writes, malformed JSON and missing IDs refused',pass:true});
+ await page.goto('http://127.0.0.1:8876');await page.locator('.card strong').first().waitFor();await page.locator('input[value="password-policy"]').check();await page.locator('#previewSelected').click();await idle();assert.equal(await page.locator('#commit').isDisabled(),true);await capture('10-strict-refusal','#repairs');report.checks.push({name:'Strict UI refuses even a rank-passing unbounded preview',pass:true});
+ await page.goto('http://127.0.0.1:8877');await page.locator('#analyze').click();await idle();assert.match(await page.locator('#analysisSummary').innerText(),/RESOLVED_EXHAUSTIVE/);await page.locator('.action').first().click();await idle();await page.locator('#commit').click();await idle();const exhaustive=(await api('export',undefined,8877)).body;fs.writeFileSync(path.join(out,'11-exhaustive.json'),JSON.stringify(exhaustive,null,2));check('Strict exhaustive commit charges all 40 target vectors',()=>{assert.equal(exhaustive.status.active_b,4);assert.equal(exhaustive.status.charged_b_document_encodings,40)});await capture('11-exhaustive');
+ check('No browser JavaScript errors',()=>assert.deepEqual(errors,[]));
+ report.complete=true;fs.writeFileSync(path.join(out,'browser-report.json'),JSON.stringify(report,null,2));
+} finally {if(browser)await browser.close();for(const p of processes)p.kill()}
+})().catch(e=>{console.error(e);process.exitCode=1});

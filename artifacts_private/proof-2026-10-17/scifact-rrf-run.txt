@@ -1,0 +1,18 @@
+{
+  "output": "artifacts_private/proof-2026-10-17/scifact-rrf.json",
+  "measures": {
+    "legacy_ndcg_at_10": 0.8888888888888888,
+    "selective_ndcg_at_10": 0.8888888888888888,
+    "full_b_ndcg_at_10": 0.8978088012057569,
+    "protected_violations": 0,
+    "development_ndcg_floor": 0.8859108127976215,
+    "development_ndcg_after": 0.8859108127976215,
+    "candidate_envelope_full_b_top10_miss_fraction": 0.15,
+    "charged_b_document_encodings": 80,
+    "evaluation_only_b_document_encodings": 160,
+    "migrated_objects": 0,
+    "corpus_size": 160,
+    "barrier_rejected_candidates": 301
+  },
+  "scope": "Reduced SciFact corpus includes all relevant test documents for sampled queries; metrics are conditional on this sample, not BEIR leaderboard scores."
+}

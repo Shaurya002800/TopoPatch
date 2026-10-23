@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-17T09:00:49.896Z",
+  "scope": "Authored 40-document lexical fixture, exact search, loopback HTTP and SQLite",
+  "checks": [
+    {
+      "name": "Fresh state: epoch 0, B membership 0",
+      "pass": true
+    },
+    {
+      "name": "Discovery charged 14 vectors without activating membership",
+      "pass": true
+    },
+    {
+      "name": "Unsafe preview visibly disables commit",
+      "pass": true
+    },
+    {
+      "name": "Direct HTTP unsafe commit refused",
+      "pass": true
+    },
+    {
+      "name": "Accepted commit: epoch 1, active B 1, all protected checks pass",
+      "pass": true
+    },
+    {
+      "name": "Live search returns protected password-policy first",
+      "pass": true
+    },
+    {
+      "name": "Browser export contains committed state",
+      "pass": true
+    },
+    {
+      "name": "Actual server restart preserves epoch and membership",
+      "pass": true
+    },
+    {
+      "name": "Registered legacy fallback works and mismatched query is refused",
+      "pass": true
+    },
+    {
+      "name": "Rollback: epoch 2, B membership 0, incurred encoding cost retained",
+      "pass": true
+    },
+    {
+      "name": "Old commit preview rejected after rollback",
+      "pass": true
+    },
+    {
+      "name": "Cross-origin writes, malformed JSON and missing IDs refused",
+      "pass": true
+    },
+    {
+      "name": "Strict UI refuses even a rank-passing unbounded preview",
+      "pass": true
+    },
+    {
+      "name": "Strict exhaustive commit charges all 40 target vectors",
+      "pass": true
+    },
+    {
+      "name": "No browser JavaScript errors",
+      "pass": true
+    }
+  ],
+  "captures": [
+    "01-initial.png",
+    "02-analysis.png",
+    "03-unsafe-preview.png",
+    "04-safe-preview.png",
+    "05-committed.png",
+    "06-live-search.png",
+    "07-restarted.png",
+    "08-fallback.png",
+    "09-rollback.png",
+    "10-strict-refusal.png",
+    "11-exhaustive.png"
+  ],
+  "unsafe": {
+    "status": 400,
+    "body": {
+      "error": "Unsafe preview: commit denied"
+    }
+  },
+  "complete": true
+}

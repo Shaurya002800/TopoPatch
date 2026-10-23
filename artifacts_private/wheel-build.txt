@@ -1,0 +1,10 @@
+WARNING: The directory '/Users/shaurya/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /Users/shaurya/Downloads/TotoPatch
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: topopatch
+  Building wheel for topopatch (pyproject.toml): started
+  Building wheel for topopatch (pyproject.toml): finished with status 'done'
+  Created wheel for topopatch: filename=topopatch-0.1.0-py3-none-any.whl size=22009 sha256=bfc32726a502192feec66b423a1d18c1295d0eb3af13146d61b8eb398d9866db
+  Stored in directory: /private/var/folders/_7/4x2mbnx915b3zyjhbllgcslm0000gn/T/pip-ephem-wheel-cache-rh21e2ip/wheels/69/40/84/f9a718c074d86dcda9548e0736719db70357540213789895cb
+Successfully built topopatch
